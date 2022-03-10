@@ -1,0 +1,10 @@
+step 1: create a ci server (jenkins)
+        > create ec2 instance
+        > install jdk & maven
+        > install jenkins server
+        > configure jenkins for adminuser.
+        > install all suggessted plugins.
+
+step 2: Create a docker server
+
+step 3: Configure a CI Pipeline

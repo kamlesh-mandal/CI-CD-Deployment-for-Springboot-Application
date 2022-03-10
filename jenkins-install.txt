@@ -1,0 +1,25 @@
+# Jenkins install in ubuntu
+
+# jdk install
+sudo apt install default-jdk -y
+
+# maven install 
+sudo apt install maven -y
+
+# jenkins install
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install jenkins
+
+# verify jenkins status
+sudo service jenkins status
+
+# start jenkibns server
+sudo service jenkins start
+
+# stop jenkibns server
+sudo service jenkins stop
+
+# restart jenkibns server
+sudo service jenkins restart
